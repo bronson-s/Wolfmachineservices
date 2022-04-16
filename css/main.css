@@ -1,228 +1,316 @@
 body {
-    /* font-family: 'Lato', sans-serif; */
-    font-family: 'Courier New', Courier, monospace;
-    color: #333;
-    line-height: 1.6;
-    background-color: black;
-    color: white;
-  }
+  /* font-family: 'Lato', sans-serif; */
+  font-family: 'Times New Roman', Times, serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.navbar-toggler-icon{
+  color: black;
+}
 
 
 .socials{
-    font-size: 3rem;
-    /* padding-right: 3%; */
-    padding-left: 10%;
-    position: relative;
-    display: inline-flex;
-    color: white;
-    text-align: center;
-    align-items: center;
-  }
-  .soc{
-    font-size: 3rem;
-  display:inline;
-    color:white;
-    text-align: center;
-  }
-  a:hover{
-    text-decoration: none;
-  }
-  
-  a{
+  font-size: 3rem;
+  /* padding-right: 3%; */
+  padding-left: 10%;
+  position: relative;
+  display: inline-flex;
   color: white;
-    text-decoration: none;
-  }
-  .logo{
-    text-align: center;
-    
-  }
-  .fb{
-    text-align: center;
-    
-  }
-  
-  
-  #GameLogo{
-    width: 75%;
-    height: auto;
-    padding-top: 10px;
-  }
-  #GameLogo:hover{
-    opacity: .5;
-  }
-  #TFLogo{
-    width: 65%;
-    height: auto;
-    padding-top: 10px;
-  }
-  #TFLogo:hover{
-    opacity: .5;
-  }
-  #OrgLogo:hover{
-    opacity: .5;
-  
-  }
-  @media (min-width:992px) {
-    body {
-      padding-top: 0;
-      padding-left: 17rem
-    }
-  }
-  #sideNav .navbar-nav .nav-item .nav-link {
-    font-weight: 800;
-    letter-spacing: .05rem;
-    text-transform: uppercase;
-    color: black;
-  }
-  
-  #sideNav .navbar-toggler:focus {
-    outline-color: #d48a6e
-  }
-  
-  @media (min-width:992px) {
-    #sideNav {
-      text-align: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      display: flex;
-      flex-direction: column;
-      width: 17rem;
-      height: 100vh
-    }
-  
-    #sideNav .navbar-brand {
-      display: flex;
-      margin: auto auto 0;
-      padding: .5rem
-    }
-  
-    #sideNav .navbar-brand .img-profile {
-      max-width: 10rem;
-      max-height: 10rem;
-      border: .2rem solid black
+  text-align: center;
+  align-items: center;
+}
+.soc{
+  font-size: 3rem;
+display:inline;
+  color:white;
+  text-align: center;
+}
+a:hover{
+  text-decoration: none;
+}
 
-    }
+a{
+color: white;
+  text-decoration: none;
+}
+.logo{
+  text-align: center;
   
-    #sideNav .navbar-collapse {
-      display: flex;
-      align-items: flex-start;
-      flex-grow: 0;
-      width: 100%;
-      margin-bottom: auto
-    }
+}
+.fb{
+  text-align: center;
   
-    #sideNav .navbar-collapse .navbar-nav {
-      flex-direction: column;
-      width: 100%
-    }
-  
-    #sideNav .navbar-collapse .navbar-nav .nav-item {
-      display: block
-    }
-  
-    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-      display: block
-    }
+}
+
+
+#GameLogo{
+  width: 75%;
+  height: auto;
+  padding-top: 10px;
+}
+#GameLogo:hover{
+  opacity: .5;
+}
+#TFLogo{
+  width: 65%;
+  height: auto;
+  padding-top: 10px;
+}
+#TFLogo:hover{
+  opacity: .5;
+}
+#OrgLogo:hover{
+  opacity: .5;
+
+}
+@media (min-width:992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem
   }
-  .card{
-    border-color: rgba(113, 113, 131, 0.829);
-    background-color: rgba(157, 154, 172, 0.082);
+}
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: .05rem;
+  text-transform: uppercase;
+  color: black;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: #d48a6e
+}
+
+@media (min-width:992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh
   }
-  .dev-icons {
-    font-size: 3rem;
-    padding-left: 20px;
-    color: rgba(2, 1, 17, 0.829);
+
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: .5rem
   }
-  
-  .dev-icons .list-inline-item i:hover {
-    color: rgba(14, 14, 32, 0.904);
+
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: .2rem solid black
+
   }
+
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto
+  }
+
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%
+  }
+
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block
+  }
+
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block
+  }
+}
+.card{
+  border-color: rgba(113, 113, 131, 0.829);
+  background-color: rgba(157, 154, 172, 0.082);
+}
+.dev-icons {
+  font-size: 3rem;
+  padding-left: 20px;
+  color: rgba(2, 1, 17, 0.829);
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: rgba(14, 14, 32, 0.904);
+}
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  /* max-width: 75rem; */
+ 
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none
+}
+
+@media (min-width:768px) {
   section.resume-section {
-    padding-top: 5rem !important;
-    padding-bottom: 5rem !important;
-    max-width: 75rem;
-   
+    min-height: 100vh
   }
-  
+
   section.resume-section .resume-item .resume-date {
-    min-width: none
+    min-width: 18rem
   }
+}
+
+.github{
   
-  @media (min-width:768px) {
-    section.resume-section {
-      min-height: 100vh
-    }
-  
-    section.resume-section .resume-item .resume-date {
-      min-width: 18rem
-    }
+  font-size: 3rem
+}
+
+@media (min-width:992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important
   }
+}
+.about-header{
   
-  .github{
-    
-    font-size: 3rem
-  }
+  align-items: center;
+  font-size: 90%;
+  display: inline;
+  /* color: rgba(27, 26, 78, 0.829); */
+
+}
+.fname ul{
+
+}
+
+.fname li{
+
+
+
+
+}
+.fname {
+
+  background-color: black;
+  color: white;
+
+  /* float: left; */
+
+}
+.bio{
+
   
-  @media (min-width:992px) {
-    section.resume-section {
-      padding-top: 3rem !important;
-      padding-bottom: 3rem !important
-    }
-  }
-  .about-header{
-    
-    align-items: center;
-    font-size: 90%;
+  padding-left: 20px;
+    font-size: 125%;
     display: inline;
-    /* color: rgba(27, 26, 78, 0.829); */
-
-  }
-  .fname ul{
-
-  }
-
-  .fname li{
-
-
-  
-
-  }
-  .fname {
-
-    background-color: black;
-    color: white;
-
-    /* float: left; */
-
-  }
-  .bio{
-
-    
-    padding-left: 20px;
-      font-size: 125%;
-      display: inline;
-      /* color: rgba(18, 18, 44, 0.788); */
-  }
-  .sk{
-
-    padding-left: 20px;
     /* color: rgba(18, 18, 44, 0.788); */
-  }
-  .proj{
+}
+.sk{
 
-   
-    /* color: rgba(18, 18, 44, 0.788); */
-  }
-  .skill{
+  padding-left: 20px;
+  /* color: rgba(18, 18, 44, 0.788); */
+}
+.proj{
 
-    padding-left: 20px;
-    
-    display: inline;
-    /* color: rgba(27, 26, 78, 0.829); */
-  }
-  .subheading{
-    font-size: 150%;
-    padding-left: 20px;
-  }
+ 
+  /* color: rgba(18, 18, 44, 0.788); */
+}
+.skill{
+
+  padding-left: 20px;
   
+  display: inline;
+  /* color: rgba(27, 26, 78, 0.829); */
+}
+.subheading{
+  font-size: 150%;
+  padding-left: 20px;
+}
+
+.estimateForm{
+
+}
+
+form {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+max-width: 400px;
+padding: 20px;
+}
+
+input {
+width: 100%;
+height: 1.2rem;
+margin-top: 0;
+padding: 0.5em;
+border: 0;
+border-bottom: 2px solid gray;
+font-family: "Roboto", sans-serif;
+font-size: 18px;
+}
+
+input:focus {
+border-bottom: 4px solid black;
+}
+
+input[type=reset] {
+width: auto;
+height: auto;
+border-bottom: 0;
+background-color: transparent;
+color: rgb(104, 104, 104);
+font-size: 14px;
+}
+
+.title {
+width: 100%;
+margin-block-end: 0;
+font-weight: 500;
+}
+
+.note {
+width: 100%;
+margin-block-start: 0;
+font-size: 12px;
+}
+
+.form-label {
+width: 100%;
+padding: 0.5em;
+}
+
+.full-field {
+flex: 400px;
+margin: 15px 0;
+}
+
+.slim-field-left {
+flex: 1 150px;
+margin: 15px 15px 15px 0px;
+}
+
+.slim-field-right {
+flex: 1 150px;
+margin: 15px 0px 15px 15px;
+}
+
+.my-button {
+background-color: #000;
+border-radius: 6px;
+color: #fff;
+margin: 10px;
+padding: 6px 24px;
+text-decoration: none;
+}
+
+.my-button:hover {
+background-color: #666;
+}
+
+.my-button:active {
+position: relative;
+top: 1px;
+}

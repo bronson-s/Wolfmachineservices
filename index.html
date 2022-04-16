@@ -12,15 +12,15 @@
     <body id="page-top">
       
 
-        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-color:white;" id="sideNav">
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-color:grey;" id="sideNav">
           <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none"><strong>Wolfmachine Handyman Services</strong></span>
+            <span  style="color: black;" class="d-block d-lg-none"><strong>Wolfmachine Services</strong></span>
             <span class="d-none d-lg-block">
               <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./css/assets/tristen.jpg" alt="me">
             </span>
           </a>
           <button class="navbar-toggler btn-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon btn-dark"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
@@ -31,16 +31,17 @@
                 <a class="nav-link js-scroll-trigger" href="#WorkExamples">Work Examples</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+                <a class="nav-link js-scroll-trigger" href="#interests">Free Estimate</a>
               </li>
             </ul>
           </div>
         </nav>
     
  <br>
+
+
+ 
+ 
 
 
 
@@ -53,6 +54,13 @@
 
           <h1 class="fname">
             <div class="row">
+              <div class="col logo">
+                <img src="./css/assets/test.png" alt="">
+                <h1><strong><a href="tel:720-635-8323">720-635-8323</a></strong></h1>
+                <h4 >
+                  <a href="mailto: wolfmachineservices@gmail.com"><strong>wolfmachineservices@gmail.com</strong></a>
+                </h4>
+              </div>
               <div class="col">
                 <ul>
                   <li>FENCES</li>
@@ -61,13 +69,7 @@
                   <li>GATES</li>
                 </ul>
               </div>
-              <div class="col logo">
-                <img src="./css/assets/test.png" alt="">
-                <h1><strong><a href="tel:218-234-6262"> 555-555-5555</a></strong></h1>
-                <h2 >
-                  <a href="mailto: spiesbronson@gmail.com"><strong>spiesbronson@gmail.com</strong></a>
-                </h2>
-              </div>
+              
             </div>
           </h1>
         </div>
@@ -82,6 +84,11 @@
           <div class="socials">
             <a href="https://m.facebook.com/wolfmachineservicesllc/" data-toggle="tooltip" data-placement="bottom" title="Go To My Facebook!">
               <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+          <div class="socials">
+            <a href="https://www.instagram.com/wolfmachine_services_llc/" data-toggle="tooltip" data-placement="bottom" title="Go To My Instagram!">
+              <i class="fab fa-instagram"></i>
             </a>
           </div>
             
@@ -103,43 +110,78 @@
               </div>
               <br>
          </section>
-              <hr class="m-0"> 
+
               
               
-              <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="portfolio">
-                <div class="container-fluid">
-                  <div class="card container-fluid">
-                    
-                    <div className="flex flex-wrap m-4">
-                        <div className="p-4 md:w-1/2 w-full">
-                          <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
-                            <TerminalIcon className="block w-8 text-gray-500 mb-4" />
-                            <p className="leading-relaxed mb-6">{testimonial.quote}</p>
-                            <div className="inline-flex items-center">
-                             
-                              <span className="flex-grow flex flex-col pl-4">
-                                <span className="title-font font-medium text-white">
-                                  {testimonial.name}
-                                </span>
-                             
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                      
-                     
-                </div>
-              </div>
-              
-            </section>
+ 
 
               <hr class="m-0"> 
             <section  class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests" >
+           
               <div class="container-fluid">
+                <h3>Fill out form for FREE estimate!!</h3>
                 <div class="card">
-          
+                  <form class="estimateForm" action="https://formsubmit.co/8555821ce631a7ce3994a0343f1af575" method="POST" enctype="multipart/form-data">
+                    <p class="title">Your Name</p>
+                    <input type="text" name="name" required>
+                    <p class="title">Your Email</p>
+                    <input type="email" name="email" required>
+                    <p class="title">Your Phone Number</p>
+                    <input type="tel" name="number"  id="phone-number" onkeydown="phoneNumberFormatter()" required>
+                    <p class="title">Description of work needed</p>
+                    <textarea name="Description" id="" cols="30" rows="10"></textarea>
+                    <p class="title">Attach Images</p>
+                    <input type="file" name="attachment" accept="image/png, image/jpeg"/>
+                 
+
+
+                    <!-- <form id="address-form" action="" method="get" autocomplete="on"> -->
+                    
+                      <label class="full-field">
+                        <!-- Avoid the word "address" in id, name, or label text to avoid browser autofill from conflicting with Place Autocomplete. Star or comment bug https://crbug.com/587466 to request Chromium to honor autocomplete="off" attribute. -->
+                        <span class="form-label">Address</span>
+                        <input
+                          id="ship-address"
+                          name="ship-address"
+                          required
+                          autocomplete="off"
+                        />
+                      </label>
+                      <label class="full-field">
+                        <span class="form-label">Apartment, unit, suite, or floor #</span>
+                        <input id="address2" name="address2" />
+                      </label>
+                      <label class="full-field">
+                        <span class="form-label">City*</span>
+                        <input id="locality" name="locality"  />
+                      </label>
+                      <label class="slim-field-left">
+                        <span class="form-label">State/Province*</span>
+                        <input id="state" name="state"  />
+                      </label>
+                      <label class="slim-field-right" for="postal_code">
+                        <span class="form-label">Postal code*</span>
+                        <input id="postcode" name="postcode"  />
+                      </label>
+                      <label class="full-field">
+                        <span class="form-label">Country/Region*</span>
+                        <input id="country" name="country"  />
+                      </label>
+                  
+                
+                    <!-- 
+                     The `defer` attribute causes the callback to execute after the full HTML
+                     document has been parsed. For non-blocking uses, avoiding race conditions,
+                     and consistent behavior across browsers, consider loading using Promises
+                     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+                    -->
+                    <script
+                      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAagSFol_lmaYvVHFV84UuZ3BMUfkNVyXc&callback=initAutocomplete&libraries=places&v=weekly"
+                      defer
+                    ></script>
+                    
+                    <button class="my-button" type="submit">Send</button>
+               </form>
                 </div>
               </div>
             </section>
@@ -155,6 +197,8 @@
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
             <script src="https://kit.fontawesome.com/6ea2cddb66.js" crossorigin="anonymous"></script> 
             <script src="js/resume.js"></script>
+            <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
             <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="mNIcdqHn"></script>
           </body>
