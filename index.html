@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bronson Spies</title>
+    <title>WolfmachineServicesLLC</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Spectral+SC:wght@300&display=swap" rel="stylesheet">
@@ -40,8 +40,6 @@
  <br>
 
 
- 
- 
 
 
 
@@ -58,7 +56,7 @@
                 <img src="./css/assets/test.png" alt="">
                 <h1><strong><a href="tel:720-635-8323">720-635-8323</a></strong></h1>
                 <h4 >
-                  <a href="mailto: wolfmachineservices@gmail.com"><strong>wolfmachineservices@gmail.com</strong></a>
+                  <a href="mailto: tristen@wolfmachineservices.com"><strong>tristen@wolfmachineservices.com</strong></a>
                 </h4>
               </div>
               <div class="col">
@@ -77,7 +75,7 @@
         <br />
         <div class="container-fluid">
           <p class="bio">
-            I am your local handyman and Colorado native. I began serving the greater Denver area in 2018. I am passionate about moto-cross and the great outdoors our wonderful state has to offer. I specialize in fence construction and rebuilds and have a background in commercial and residential disaster mitigation. If you are wondering wether or not the job you need done is right for me to handle, please use the contact form below and I will get back to you shortly as well as provide a free estimate if needed.
+            I specialize in fences, gates, gutter cleaning and repair, and demolition. I have been operating in the greater denver area since 2018 and have since serviced thousands of happy customers. I take pride in providing fairly priced quality services to my community. Among my main services listed above I also do small/odd jobs. To receive a free estimate and see if I am right for a job, please fill out my <a class="pageLink js-scroll-trigger" href="#interests">Contact/Free Estimate Form</a> below and I will get back to you promptly! 
           </p>
           <br>
           <br>
@@ -121,18 +119,20 @@
               <div class="container-fluid">
                 <h3>Fill out form for FREE estimate!!</h3>
                 <div class="card">
-                  <form class="estimateForm" action="https://formsubmit.co/8555821ce631a7ce3994a0343f1af575" method="POST" enctype="multipart/form-data">
+                  <form class="estimateForm" action="https://formsubmit.co/tristen@wolfmachineservices.com" method="POST" enctype="multipart/form-data">
                     <p class="title">Your Name</p>
-                    <input type="text" name="name" required>
+                    <input placeholder="Name" type="text" name="name" required>
                     <p class="title">Your Email</p>
-                    <input type="email" name="email" required>
+                    <input placeholder="Email" type="email" name="email" required>
                     <p class="title">Your Phone Number</p>
-                    <input type="tel" name="number"  id="phone-number" onkeydown="phoneNumberFormatter()" required>
+                    <input placeholder="Phone Number" type="tel" name="number"  id="phone-number" onkeydown="phoneNumberFormatter()" >
                     <p class="title">Description of work needed</p>
-                    <textarea name="Description" id="" cols="30" rows="10"></textarea>
+                    <textarea placeholder="Please describe what you need done" name="Description" id="" cols="30" rows="10"></textarea>
                     <p class="title">Attach Images</p>
-                    <input type="file" name="attachment" accept="image/png, image/jpeg"/>
-                 
+                    <div id="input">
+                      <input class="upload" id="images" type="file" name="attachment" accept="image/png, image/jpeg, image/heic"/>
+                    </div>
+                    <button onclick="addInput()" class="my-button"> Add another photo</button>
 
 
                     <!-- <form id="address-form" action="" method="get" autocomplete="on"> -->

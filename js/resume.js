@@ -156,3 +156,21 @@ return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(
   6
 )}-${phoneNumber.slice(6, 9)}`;
 }
+
+
+
+
+
+
+
+
+function addInput() {
+  var input = document.createElement('input');
+  input.type = 'file';
+  input.class = 'upload';
+  input.className = 'upload';
+
+ 
+    var container = document.getElementById('input');
+    container.appendChild(input);
+}
